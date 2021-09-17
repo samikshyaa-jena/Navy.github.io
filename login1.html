@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Login Page</title>
+<style>
+body{
+	background: url(images/gi3.gif);
+	background-size: 100px;
+}
+	table{
+		width: 300px;
+		height: 300px;
+		margin-top: 50px;
+		font-size: 20px;
+		color:white;
+		background-color:blue;
+		
+	}
+</style>
+</head>
+<body>
+	<a href="index.html"><center><button style="width:80px;
+                                height:50px;
+                                font-size: 20px;
+                                background-color: orange;
+                                color:white;">Home</button></center></a>
+<form name="loginForm" method="post" action="shop.html">
+<table width="20%"  align="center">
+
+<tr>
+<td colspan=2><center><font size="20"><b> Login Page</b></font></center></td>
+</tr>
+
+<tr>
+<td>Username:</td>
+<td><input type="text" size=25 name="userid"></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="Password" size=25 name="pwd"></td>
+</tr>
+
+<tr>
+<td ><input type="Reset" style="width: 80px;
+                                height:50px;
+                                font-size: 20px;
+                                background-color: orange;
+                                color:white;"></td>
+
+<td><input type="submit" href="shop.html" onclick="return check(this.form)" value="Login" style="width: 80px;
+                                height:50px;
+                                font-size: 20px;
+                                background-color: orange;
+                                color:white;"></td>
+                            
+                   
+</tr>
+
+</table>
+</form>
+<a href="registration.html"><center><button style="width: 100px;
+                                height:50px;
+                                font-size: 20px;
+                                background-color: orange;
+                                color:white;">Sing Up</button></center></a>
+                                <a href="registration.html"><center><button style="width: 200px;
+                                height:50px;
+                                font-size: 20px;
+                                background-color: green;
+                                color:white;">Forgot Password</button></center></a>
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "qwrt@678" && form.pwd.value == "innavy#90")
+{
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+
+</body>
+</html>
